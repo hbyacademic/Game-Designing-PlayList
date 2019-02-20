@@ -18,10 +18,10 @@ class CirSystem{
   int posy;   //y position of middle circle
   int branches;  //# of the branches
   int level; //level
-  boolean lock=false;  //roate or not
+  boolean lock=false; //roate or not
   boolean LevelUpOnce=false; //level up once
   int amt;//number on the top node
-  int radius; //radius of the three nodes
+  int radius; //radius of the three nodes
   /************************************
   >table[x][0]= 
     1,if there is a node at x degree. 
@@ -101,7 +101,8 @@ class CirSystem{
         
         //current index number
         table[270][1]=Cir.getNum();    
-      }
+      
+}
     }
     
     //show the nodes connected to head
@@ -116,7 +117,8 @@ class CirSystem{
         line(posx+R/2*cos(angle),posy-R/2*sin(angle),posx+15*R*cos(angle)/8,posy-15*R*sin(angle)/8);
         
         //radius of the node is: R/4
-        ellipse(posx+2*R*cos(angle),posy-2*R*sin(angle),R/4,R/4); 
+        ellipse(posx+2*R*cos(angle),posy-2*R*sin(angle),R/4,R/4);
+ 
         
         //label the nodes except initial nodes
         //with its index numbers
@@ -149,7 +151,8 @@ class CirSystem{
       if(amt>0) amt--; 
     }
     
-    /*If reset button was pressed,
+    /*
+If reset button was pressed,
     /then relaese it.*/
     if(golink){
       golink=false;
@@ -171,7 +174,8 @@ class CirSystem{
          table[(i+=s)%360][0]=1;
          
          //node number update
-         table[i%360][1]=table[i-s][1];
+         table[i%360][1]=
+table[i-s][1];
          table[i-s][1]=0;
       }
     }
@@ -185,7 +189,8 @@ class CirSystem{
       return true;
     return false;
   }
-  
+ 
+ 
   
   /***************************
   draw a red node 
@@ -268,7 +273,8 @@ class CirSystem{
         String NumOnNode=str(amt-(2-i));
         text(NumOnNode,width/2,height-260-(radius+10)*(i+1)); 
       }
-    }   
+    }
+   
   }
   
   /************************
