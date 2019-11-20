@@ -416,19 +416,14 @@ void showPsBtn(){
 
 //generate the next new level
 void genNextLevel(){
+  
+  rst();
+  
   //initial random labels
   if(level>4){
      for(int i=0;i<num;i++){
        X[i]=Y[i]=int(random(2,num-1)); 
      }
-  }
-  
-  //trigger initialization
-  for(int i=0;i<num;i++){
-    for(int j=0;j<num;j++){
-      trig[i][j]=false;
-      trigCrs[i][j]=false;
-    }
   }
   
   //inside-out algorithm
