@@ -71,3 +71,7 @@ https://www.youtube.com/watch?v=i7J1B65YnUo <br/>
 👉 GD_018: <br/>
 The BrickBreaker game (Processing) <br/>
 https://www.youtube.com/watch?v=4pWuqv7aU5k <br/>
+
+👉 GD_019: <br/>
+The Nonogram game (Processing) <br/>
+https://www.youtube.com/watch?v=_MC-CdQUEbA <br/>
